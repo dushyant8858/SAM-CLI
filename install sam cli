@@ -1,0 +1,13 @@
+   88  sudo yum update
+   89  aws --version 
+   90  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+   91  test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+   92  test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+   93  test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+   94  echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+   95  sudo yum update
+   96  brew --version
+   97  brew tap aws/tap
+   98  brew --version
+   99  brew install aws-sam-cli
+  100  sam --version
